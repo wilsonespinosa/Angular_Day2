@@ -1,0 +1,11 @@
+<div class="containerTitle">
+    <h1>Directives and Pipes format.</h1>
+</div>
+<div class="container">
+    <ul>
+        <li *ngFor="let data of jsonData; let i = index;">
+            <p appAppDirective>{{i}}: {{data | prefixFilter | suffixFilter}}</p>
+        </li>
+    </ul>
+
+</div>
